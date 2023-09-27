@@ -9,9 +9,9 @@ const Card = ({ data }) => {
     return (
         <div className="mb-10">
             <Link to={`/apiData/${id}`}>
-                <div className="relative flex max-w-[24rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-                    <div className="relative m-0 overflow-hidden rounded-lg bg-transparent bg-clip-border text-gray-700 shadow-none">
-                        <img
+                <div className="relative flex max-w-[24rem] flex-col rounded-xl ml-5 lg:ml-0 bg-white bg-clip-border text-gray-700 shadow-md">
+                    <div className="relative m-0 overflow-hidden rounded-lg bg-transparent bg-clip-border  lg:w-full text-gray-700 shadow-none">
+                        <img className="w-[390px]"
                             src={img}
                         />
                     </div>

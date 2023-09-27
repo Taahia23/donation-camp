@@ -4,12 +4,12 @@ const CardRowView = ({data}) => {
     return (
         <div>
             <div className="mb-10 relative flex max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-            <div className="relative m-0 overflow-hidden rounded-lg bg-transparent bg-clip-border text-gray-700 shadow-none">
-                        <img className="w-full"
+            <div className="w-full relative m-0 overflow-hidden rounded-lg bg-transparent bg-clip-border text-gray-700 shadow-none">
+                        <img className="h-[250px]"
                             src={img}
                         />
                     </div>
-                    <div className="p-6 " style={{backgroundColor:`${bg} `}}>
+                    <div className="p-6 w-full" style={{backgroundColor:`${bg} `}}>
                         <h4 className="inline-block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased px-3 py-2 " style={{backgroundColor: `${ category_bg_clr}` , color: `${category_clr}`}}>
                             {category}
                         </h4>

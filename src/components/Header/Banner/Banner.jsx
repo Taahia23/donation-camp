@@ -7,7 +7,7 @@ const Banner = () => {
                 <div >
                     <h1 className="pt-56 text-5xl text-center font-mono font-bold text-black">I Grow By Helping People In Need</h1>
 
-                    <div className="relative flex h-14 w-full min-w-[200px] max-w-[48rem] block mx-auto mt-10">
+                    <div className="relative flex h-14 w-28 lg:w-full min-w-[200px] max-w-[48rem] block mx-auto mt-10">
                         <input
                             type="email"
                             className="peer h-full w-full rounded-[7px] border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 pr-20 font-sans text-lg font-bold text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-black focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"

@@ -46,7 +46,8 @@ const Donation = () => {
                             <h1 className='text-3xl font-semibold'>Total : {totalPrice}</h1>
                         </div>
 
-                        <div className='grid grid-cols-2 gap-8 mb-10  mx-auto'>
+                        <div className='ml-[300px] lg:ml-0 grid grid-cols-1 md:grid-cols-1
+                        lg:grid-cols-2 gap-8 mb-10  mx-auto'>
 
                             {
                                 // eslint-disable-next-line no-undef
