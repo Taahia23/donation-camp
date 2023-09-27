@@ -1,16 +1,10 @@
-import { Link } from "react-router-dom";
 
-const Card = ({ data }) => {
-
-    const {bg, id, category, title, img, category_clr,category_bg_clr  } = data || {}
-
-
-
+const CardRowView = ({data}) => {
+    const {bg, category_bg_clr,category_clr,  category, title, img } = data || {}
     return (
-        <div className="mb-10">
-            <Link to={`/apiData/${id}`}>
-                <div className="relative flex max-w-[24rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-                    <div className="relative m-0 overflow-hidden rounded-lg bg-transparent bg-clip-border text-gray-700 shadow-none">
+        <div>
+            <div className="mb-10 relative flex max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div className="relative m-0 overflow-hidden rounded-lg bg-transparent bg-clip-border text-gray-700 shadow-none">
                         <img
                             src={img}
                         />
@@ -19,15 +13,17 @@ const Card = ({ data }) => {
                         <h4 className="inline-block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased px-3 py-2 " style={{backgroundColor: `${ category_bg_clr}` , color: `${category_clr}`}}>
                             {category}
                         </h4>
+                        <p className="font-semibold
+                         text-xl">%<span>290</span></p>
                         <p style={{color: `${category_clr}`}}className="mt-3 block font-sans text-xl font-normal leading-relaxed text-gray-700 antialiased">
-                            {title}
+                        {title}
                         </p>
                     </div>
 
+
                 </div>
-            </Link>
         </div>
     );
 };
 
-export default Card;
+export default CardRowView;
